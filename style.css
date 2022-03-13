@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+}
+/*---------------------- RESET STYLE ------------------------*/
+body,
+ul,
+li {
+  all: unset;
+}
+
+/*---------------------- GENERAL STYLE ------------------------*/
+body {
+  background-color: rgb(231, 231, 231);
+  font-family: sans-serif;
+}
+.box {
+  background-color: lightgrey;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  min-height: 10px;
+  min-width: 10px;
+}
+.boxBase {
+  background-color: rgb(141, 141, 141);
+  padding: 10px;
+}
+
+/*---------------------- HEADER ------------------------*/
+
+.header {
+  display: flex;
+  min-height: 10vh;
+}
+.divHead {
+  display: flex;
+  align-items: center;
+  flex-basis: 60%;
+  vertical-align: middle;
+}
+.ulHead {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: space-around;
+}
+.liHead {
+  padding: 5px;
+  margin: 5px;
+  min-width: 50px;
+  min-height: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.liAccount {
+  flex-grow: 2;
+  text-align: end;
+}
+/*---------------------- MAIN  ------------------------*/
+.mainHome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  max-width: 1000px;
+  margin: 20px auto;
+  height: 100%;
+}
+.sectLeft {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 500px;
+}
+.sectRight {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-basis: 50%;
+  max-width: 500px;
+}
+.boxCard {
+  flex-basis: 100%;
+  min-width: 300px;
+  min-height: 100px;
+  margin: 20px;
+}
+.boxInfo {
+  min-height: 100px;
+  min-width: 100px;
+  margin: 20px;
+}
+.boxCart {
+  min-height: 300px;
+  min-width: 400px;
+  flex-basis: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .mainHome {
+    flex-wrap: wrap;
+    min-width: 90%;
+  }
+  .sectLeft {
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+  }
+  .sectRight {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-basis: 90%;
+    max-width: 500px;
+    height: 100vh;
+  }
+}
